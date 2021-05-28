@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane style="-fx-background-color: #79a3b1;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+   <children>
+      <AnchorPane fx:id="chapter_one_pane" layoutX="367.0" layoutY="84.0" prefHeight="914.0" prefWidth="1491.0" visible="false" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="367.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="84.0">
+         <children>
+            <Pane layoutX="-41.0" layoutY="119.0" prefHeight="797.0" prefWidth="1486.0" style="-fx-background-color: #235b6b; -fx-background-radius: 15;" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="-41.0" AnchorPane.rightAnchor="66.0" AnchorPane.topAnchor="119.0" />
+            <AnchorPane fx:id="chapter_one_page1" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <BorderPane layoutX="674.0" layoutY="160.0" prefHeight="533.0" prefWidth="731.0" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="674.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="160.0">
+                     <right>
+                        <Text fill="WHITE" lineSpacing="12.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Mësimi i sjelljeve në komunikacion është një nder parimet kryesore që duhet te dijë çdo fëmijë. Këto rregulla  janë esenciale për zhvillimin e jetesës së shëndetshme kudo qe janë. &#10;Mesimi i sjelljeve ne komunikacion duhet te filloj ti mesohet prej moshes 5 vjeçare dhe me tutje, pası qe fillon vedisimin e femiut qysh ne moshe te hershme dhe e pergadit per me vone." wrappingWidth="369.9831027984619" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                     </right>
+                  </BorderPane>
+                  <Region id="Region_1_1" layoutX="13.0" layoutY="164.0" minWidth="600.0" prefHeight="580.0" prefWidth="973.0" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="525.0" AnchorPane.topAnchor="164.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="chapter_one_page2" prefHeight="823.0" prefWidth="1501.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Region id="Region_1_2" layoutX="13.0" layoutY="164.0" minWidth="600.0" prefHeight="580.0" prefWidth="973.0" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="525.0" AnchorPane.topAnchor="164.0" />
+                  <BorderPane layoutX="674.0" layoutY="160.0" prefHeight="533.0" prefWidth="731.0" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="674.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="160.0">
+                     <right>
+                        <Text fill="WHITE" lineSpacing="12.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Çdo vit qindra femijë pësojnë lëndime ose aksidente që përfundojnë me fatalitet, si pasojë e ecjeve të pakujdesshme në rrugë apo duke kaluar nga ana tjetër e rrugës.Makinat ecin me shpejtësi saqë është pothuajse e pamundur të parandalojnë këto lloj aksidenete,  prandaj është shumë e rëndësishme njohja  e shenjave rrugore dhe sjellja ne komunikacion." wrappingWidth="369.9831027984619" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                     </right>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="chapter_one_page3" prefHeight="823.0" prefWidth="1491.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <BorderPane layoutX="674.0" layoutY="160.0" prefHeight="533.0" prefWidth="731.0" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="674.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="160.0">
+                     <right>
+                        <Text fill="WHITE" lineSpacing="12.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Spjegimi funksionimit të komunikacionit kërkon kohë durim dhe përsëritje të vazhdueshme tek fëmijët, pasiqë është një përvojë e pa njohur më parë për ta. Para moshës 9 vjeçare, fëmijët e kanë problem që ta vlerësojnë shpejtesinë e makinave dhe se sa larg janë ato, prandaj është shumë e rëndësishmë që një I rritur të kujdeset për ta dhe ti mësojë se si të sillen kur janë afër rrugës." wrappingWidth="369.9831027984619" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                     </right>
+                  </BorderPane>
+                  <Region id="Region_1_3" layoutX="13.0" layoutY="164.0" minWidth="600.0" prefHeight="580.0" prefWidth="973.0" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="525.0" AnchorPane.topAnchor="164.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="chapter_one_page4" prefHeight="823.0" prefWidth="1491.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <BorderPane layoutX="674.0" layoutY="160.0" prefHeight="533.0" prefWidth="731.0" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="674.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="160.0">
+                     <right>
+                        <Text fill="WHITE" lineSpacing="12.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Gjithmonë kapeni dorën e fëmiut kur jeni afër rrugës, ecni në anën nga kalojnë makinat  dhe mbajeni fëmijën larg rrugës. Nëse duart I keni të zëna thuni fëmiut që të kapet për çantën ose rrobat tuaja.Dhe mos lejoni qe koncentrimi I femiut te prishet gjate kalimit te rruges sepse mund te leshoje doren tuaj dhe te vrapoje drejt makines." wrappingWidth="369.9831027984619" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                     </right>
+                  </BorderPane>
+                  <Region id="Region_1_4" layoutX="13.0" layoutY="164.0" minWidth="600.0" prefHeight="580.0" prefWidth="973.0" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="525.0" AnchorPane.topAnchor="164.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="chapter_two_pane" layoutX="367.0" layoutY="84.0" prefHeight="914.0" prefWidth="1621.0" style="-fx-background-radius: 40;" visible="false" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="367.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="84.0">
+         <children>
+            <Pane layoutX="-41.0" layoutY="119.0" prefHeight="797.0" prefWidth="1486.0" style="-fx-background-color: #235b6b; -fx-background-radius: 15;" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="-41.0" AnchorPane.rightAnchor="66.0" AnchorPane.topAnchor="119.0" />
+            <AnchorPane fx:id="chapter_two_page1" layoutX="10.0" layoutY="10.0" prefHeight="823.0" prefWidth="1491.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <BorderPane layoutX="674.0" layoutY="160.0" prefHeight="533.0" prefWidth="731.0" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="674.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="160.0">
+                     <right>
+                        <Text fill="WHITE" lineSpacing="12.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Gjatë kalimit të rrugës, duhet të përdoren 4 hapa themelorë:&#10;&#10;1) Gjej një vend të sigurt për të kaluar ne anën tjeter të rrugës;&#10;2)Qëndro pranë rrugës;&#10;3)Shiko dhe dëgjo anasjelltas;&#10;4)Merr vendimin dhe lëviz me shpejtësi adekuade;&#10;Në faqet e ardhshme do ti sqarojmë hapat më detajisht." wrappingWidth="369.9831027984619" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                     </right>
+                  </BorderPane>
+                  <Region id="Region_2_1" layoutX="13.0" layoutY="174.0" minWidth="600.0" prefHeight="580.0" prefWidth="973.0" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="525.0" AnchorPane.topAnchor="164.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="chapter_two_page2" layoutX="10.0" layoutY="10.0" prefHeight="823.0" prefWidth="1491.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Region id="Region_2_2" layoutX="13.0" layoutY="164.0" minWidth="600.0" prefHeight="580.0" prefWidth="973.0" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="525.0" AnchorPane.topAnchor="164.0" />
+                  <BorderPane layoutX="674.0" layoutY="160.0" prefHeight="533.0" prefWidth="731.0" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="674.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="160.0">
+                     <right>
+                        <Text fill="WHITE" lineSpacing="12.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="1) Hapi i parë është të gjejmë një vend të pershtatshëm për të kaluar rrugën.&#10;Ky vend ndodhet  tek vijat e zebrës të cilat shërbejnë që ti lajmerojnë vozitësit e automjeteve që të tregohen më të kujdesshëm dhe te ndalojne nese ka nevoje.&#10;Por nëse në rrugë nuk ka vija të zebrës atëherë gjej një vend ku mund ti shikosh te dy drejtimet e rrugës." wrappingWidth="369.9831027984619" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                     </right>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="chapter_two_page3" layoutX="10.0" layoutY="10.0" prefHeight="823.0" prefWidth="1491.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Region id="Region_2_3" layoutX="13.0" layoutY="164.0" minWidth="600.0" prefHeight="580.0" prefWidth="973.0" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="525.0" AnchorPane.topAnchor="164.0" />
+                  <BorderPane layoutX="674.0" layoutY="160.0" prefHeight="533.0" prefWidth="731.0" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="674.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="160.0">
+                     <right>
+                        <Text fill="WHITE" lineSpacing="12.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="2) Hapi I dytë ishte që të qëndrojmë afër rrugës, arsyeja është që të mund ti shikosh të dy drejtimet e rrugës dhe që të dukesh qartë nga vozitesit e automjeteve.&#10;Nëse jeni afër një makine ta parkuar ndalo 2 herë. Herën e parë ndalo në trotuar ndërsa herën e dytë ndalo përballë me makinës siç shihet ne figuren më poshtë." wrappingWidth="369.9831027984619" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                     </right>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="chapter_two_page4" layoutX="10.0" layoutY="10.0" prefHeight="823.0" prefWidth="1491.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Region id="Region_2_4" layoutX="13.0" layoutY="164.0" minWidth="600.0" prefHeight="580.0" prefWidth="973.0" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="525.0" AnchorPane.topAnchor="164.0" />
+                  <BorderPane layoutX="674.0" layoutY="160.0" prefHeight="533.0" prefWidth="731.0" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="674.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="160.0">
+                     <right>
+                        <Text fill="WHITE" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="3) Hapi I tretë është  të shikojmë dhe të dëgjojmë. Para se të kalojmë rrugën duhet  të shikojmë në anën e djathtë që të shohim makinat që vijnë. Pastaj duhet të shikojmë nga ana e majtë që të shohim makinat që largohen, pastaj edhe një herë nga ana e djathtë që ti shohim makinat që vijnë në anën tonë sepse makinat lëvizin shpejtë dhe nganjëherë nuk mundemi ta përcaktojmë distancën në mënyrë të saktë.&#10;" wrappingWidth="369.9831027984619" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                     </right>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="chapter_two_page5" layoutX="20.0" layoutY="20.0" prefHeight="823.0" prefWidth="1491.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Region id="Region_2_5" layoutX="13.0" layoutY="164.0" minWidth="600.0" prefHeight="580.0" prefWidth="973.0" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="525.0" AnchorPane.topAnchor="164.0" />
+                  <BorderPane layoutX="674.0" layoutY="160.0" prefHeight="533.0" prefWidth="731.0" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="674.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="160.0">
+                     <right>
+                        <Text fill="WHITE" lineSpacing="12.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="4) Hapi I katert është që të lëvizësh me shpejtësi por jo të vraposh. Gjatë kalimit të rrugës ti duhet të jesh I kujdesshëm. Kalo rrugën drejt siç mund ta shohësh në fotografinë më poshtë, është shumë e rëndësishme qe femija të kuptoj që nuk duhet te vrapojë apo të ecë shumë ngadal dhe se nuk duhet të bisedojë gjatë kalimitë të rrugës. " wrappingWidth="369.9831027984619" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                     </right>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="chapter_three_pane" layoutX="367.0" layoutY="84.0" prefHeight="914.0" prefWidth="1491.0" visible="false" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="367.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="84.0">
+         <children>
+            <Pane layoutX="-41.0" layoutY="119.0" prefHeight="798.0" prefWidth="1486.0" style="-fx-background-color: #235b6b; -fx-background-radius: 15;" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="-41.0" AnchorPane.rightAnchor="66.0" AnchorPane.topAnchor="119.0" />
+            <AnchorPane fx:id="chapter_three_page1" prefHeight="823.0" prefWidth="1491.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Region id="Region_3_1" layoutX="13.0" layoutY="164.0" minWidth="600.0" prefHeight="580.0" prefWidth="973.0" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="525.0" AnchorPane.topAnchor="164.0" />
+                  <BorderPane layoutX="674.0" layoutY="160.0" prefHeight="533.0" prefWidth="731.0" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="674.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="160.0">
+                     <right>
+                        <Text fill="WHITE" lineSpacing="12.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Komunikacioni rrugor është akoma më i rrezikshëm natën,ose nëse bie shi. Në qoftëse është e mundur mos e tejkalo rrugën në kushte të tilla për arsye së vozitësit e makinave kanë mundësi që të mos ju shohin fare.Per shkaqe sigurie mos I nxjerrni femijet ne komunikacion naten apo ne kohe me shi ne qoftese nuk eshte patjeter apo gjendje urgjence." wrappingWidth="369.9831027984619" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                     </right>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="chapter_three_page2" prefHeight="823.0" prefWidth="1491.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Region id="Region_3_2" layoutX="13.0" layoutY="164.0" prefHeight="580.0" prefWidth="973.0" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="515.0" AnchorPane.topAnchor="164.0" />
+                  <BorderPane layoutX="674.0" layoutY="160.0" prefHeight="533.0" prefWidth="731.0" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="674.0" AnchorPane.rightAnchor="96.0" AnchorPane.topAnchor="160.0">
+                     <right>
+                        <Text fill="WHITE" lineSpacing="12.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Nëse duhet që patjeter ta kaloni rrugën ateher ju duhet të jeni dy here me te kujdesëshem se ne kushte normale. Nëse është e mundur mbathni rroba qe reflektohen, në këtë mënyr ju do jeni më sigurt gjatë këtyre kushteve për arsye se vozitësit e makina do ju shohin me qartë." wrappingWidth="369.9831027984619" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                     </right>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="chapter_three_page3" layoutX="10.0" layoutY="10.0" prefHeight="823.0" prefWidth="1491.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Region id="Region_3_3" layoutX="-12.0" layoutY="270.0" prefHeight="346.0" prefWidth="785.0" AnchorPane.bottomAnchor="342.0" AnchorPane.leftAnchor="-12.0" AnchorPane.rightAnchor="738.0" AnchorPane.topAnchor="270.0" />
+                  <BorderPane layoutX="458.0" layoutY="160.0" prefHeight="533.0" prefWidth="1017.0" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="458.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="160.0">
+                     <right>
+                        <Text fill="WHITE" lineSpacing="12.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresa e videos nga e cila eshte huazuar materiali për &#10;krijimin e këtij aplikacioni&#10;https://www.youtube.com/watch?v=kLKbRWsjnUE" textAlignment="CENTER" wrappingWidth="680.6495456695557" y="20.0" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                     </right>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Pane prefHeight="121.0" prefWidth="1920.0" style="-fx-background-color: #235b6b#235b6b;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane layoutY="-4.0" prefHeight="1080.0" prefWidth="220.0" style="-fx-background-color: #276678;" stylesheets="@../sample/style_main_page.css">
+         <children>
+            <Label id="mylabel" fx:id="User_name_label" alignment="CENTER" layoutX="-6.0" layoutY="36.0" prefHeight="55.0" prefWidth="230.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Button fx:id="drop_btn" ellipsisString="" layoutX="-9.0" layoutY="124.0" lineSpacing="2.0" mnemonicParsing="false" onAction="#Mesimet_menu_button" prefHeight="65.0" prefWidth="230.0" style="-fx-background-color: rgba(0, 0, 0, 0.11);" text="Mësimet" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <AnchorPane fx:id="drop_options" layoutX="-8.0" layoutY="189.0" prefHeight="160.0" prefWidth="228.0" style="-fx-background-color: #276678;" visible="false">
+               <children>
+                  <Button id="kapitulli_1_btn" layoutX="8.0" layoutY="18.0" mnemonicParsing="false" onAction="#chapter_1_btn" prefHeight="65.0" prefWidth="220.0" text="Kapitulli i parë" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Button>
+                  <Button id="Kapitulli_2_btn" layoutX="8.0" layoutY="96.0" mnemonicParsing="false" onAction="#chapter_2_btn" prefHeight="65.0" prefWidth="220.0" text="Kapitulli i dytë" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Button>
+                  <Button id="Kapitulli_3_btn" layoutX="8.0" layoutY="176.0" mnemonicParsing="false" onAction="#chapter_3_btn" prefHeight="65.0" prefWidth="220.0" text="Kapitulli i tretë" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Button>
+               </children></AnchorPane>
+            <Button fx:id="quizz_btn" layoutX="-9.0" layoutY="194.0" mnemonicParsing="false" onAction="#quizz_btn" prefHeight="65.0" prefWidth="230.0" style="-fx-background-color: rgba(0, 0, 0, 0.11);" text="Kuiz" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children></Pane>
+      <Label fx:id="titulli" alignment="CENTER" contentDisplay="CENTER" layoutX="219.0" layoutY="40.0" prefHeight="44.0" prefWidth="1698.0" text="Siguria në komunikacion" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="13.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="After_kuiz" layoutX="227.0" layoutY="120.0" prefHeight="967.0" prefWidth="1703.0" style="-fx-background-color: #79a3b1;" visible="false">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="106.0" lineSpacing="15.0" prefHeight="302.0" prefWidth="1545.0" text="Kuizi përfundoi, rezultati:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="Perserit_btn" layoutX="729.0" layoutY="541.0" mnemonicParsing="false" onAction="#Vazhdo_click" prefHeight="56.0" prefWidth="224.0" text="Përsërit kuizin" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Label fx:id="pergjigje_gabim" layoutX="656.0" layoutY="346.0" prefHeight="86.0" prefWidth="521.0" text="Numri i përgjigjeve të pa sakta: 4" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="pergjigje_sakt" layoutX="656.0" layoutY="286.0" prefHeight="86.0" prefWidth="521.0" text="Numri i përgjigjeve të sakta: 0" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="rezultati" layoutX="762.0" layoutY="450.0" text="Rezultati: 0 / 4" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <BorderPane layoutY="900.0" prefHeight="162.0" prefWidth="1930.0" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <right>
+            <Label fx:id="page_label" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="37.0" prefWidth="187.0" text="Faqe" textFill="WHITE" visible="false" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets right="80.0" />
+               </BorderPane.margin>
+            </Label>
+         </right>
+      </BorderPane>
+      <BorderPane layoutY="729.0" prefHeight="356.0" prefWidth="1914.0" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="0.0">
+         <center>
+            <HBox alignment="CENTER" prefHeight="66.0" prefWidth="1914.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="back_btn" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#back_btn_click" prefHeight="49.0" prefWidth="229.0" text="Mbrapa" textFill="WHITE" visible="false">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="front_btn" mnemonicParsing="false" onMouseClicked="#front_btn_click" prefHeight="49.0" prefWidth="229.0" text="Para" textFill="WHITE" visible="false">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="150.0" />
+               </padding>
+            </HBox>
+         </center>
+      </BorderPane>
+      <AnchorPane fx:id="Before_kuiz" layoutX="227.0" layoutY="120.0" prefHeight="900.0" prefWidth="1703.0" visible="false" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="227.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <BorderPane layoutX="76.0" layoutY="312.0" prefHeight="390.0" prefWidth="1649.0" AnchorPane.bottomAnchor="198.0" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="-22.0" AnchorPane.topAnchor="312.0">
+               <center>
+                  <Text fill="WHITE" lineSpacing="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kuizi do të zgjasë 5 minuta, gjate mbajtjes se kuizit nëse vendosni të dilni nga ky panel përgjigjet e dhëna nuk do te jenë të vlefshme. A jeni të sigurt që dëshironi të vazhdoni me kuizin?" textAlignment="CENTER" wrappingWidth="1169.6327209472656" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+               </center>
+               <bottom>
+                  <Button fx:id="Vazhdo_btn" mnemonicParsing="false" onAction="#Vazhdo_click" prefHeight="56.0" prefWidth="224.0" text="Po, vazhdo" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets top="20.0" />
+                     </BorderPane.margin>
+                  </Button>
+               </bottom>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="quizz_panel" layoutX="219.0" layoutY="110.0" prefHeight="968.0" prefWidth="1731.0" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="133.0" AnchorPane.topAnchor="110.0">
+         <children>
+            <AnchorPane fx:id="Kuiz_page_1" prefHeight="964.0" prefWidth="1700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="469.0" layoutY="478.0" prefHeight="152.0" prefWidth="811.0" text="Cila nga fotografitë më sipër është e saktë " textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="Kuiz_btn_page_1_1" layoutX="778.0" layoutY="613.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="210.0" text="Fotoja numër 1" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="Kuiz_btn_page_1_2" layoutX="778.0" layoutY="662.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="202.0" text="Fotoja numër 2" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </RadioButton>
+                  <Region id="Region_4_2" layoutX="140.0" layoutY="110.0" prefHeight="399.0" prefWidth="660.0" AnchorPane.bottomAnchor="459.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="931.0" AnchorPane.topAnchor="110.0" />
+                  <Region id="Region_4_1" layoutX="918.0" layoutY="110.0" prefHeight="399.0" prefWidth="712.0" visible="false" AnchorPane.bottomAnchor="459.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="931.0" AnchorPane.topAnchor="110.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Kuiz_page_2" prefHeight="964.0" prefWidth="1700.0" visible="false">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="875.0" layoutY="223.0" prefHeight="194.0" prefWidth="811.0" text="Cilën nga hapat në figuren ne të majtë duhet ti përmbushum&#10;para se te tejkalojmë rrugen? " textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="337.0" fitWidth="656.0" layoutX="205.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/10.png" />
+                     </image>
+                  </ImageView>
+                  <RadioButton fx:id="Kuiz_btn_page_2_1" layoutX="828.0" layoutY="553.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="210.0" text="2,3" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="Kuiz_btn_page_2_2" layoutX="828.0" layoutY="602.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="202.0" text="Të gjithë hapat" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </RadioButton>
+                  <Label fx:id="kuiz_timer1" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="Kuiz_btn_page_2_3" layoutX="828.0" layoutY="652.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="202.0" text="1,2,3" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Kuiz_page_3" prefHeight="966.0" prefWidth="1700.0" visible="false">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="875.0" layoutY="223.0" prefHeight="194.0" prefWidth="811.0" text="Gjatë kalimit të rruges, cilë prej 3 drejtimeve duhet tju permbahemi?" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="337.0" fitWidth="656.0" layoutX="205.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/15-kuiz.jpg" />
+                     </image>
+                  </ImageView>
+                  <RadioButton fx:id="Kuiz_btn_page_3_1" layoutX="858.0" layoutY="553.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="210.0" text="A" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="Kuiz_btn_page_3_2" layoutX="858.0" layoutY="602.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="202.0" text="C" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </RadioButton>
+                  <Label fx:id="kuiz_timer11" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="Kuiz_btn_page_3_3" layoutX="858.0" layoutY="655.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="202.0" text="B" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Kuiz_page_4" layoutX="10.0" prefHeight="968.0" prefWidth="1690.0" visible="false">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="875.0" layoutY="223.0" prefHeight="194.0" prefWidth="824.0" text="Gjatë natës ose kushteve me shikim te zvogëluar, nese nevoja a&#10;duhet ta kalojmë rrugen?" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="337.0" fitWidth="656.0" layoutX="205.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/16.png" />
+                     </image>
+                  </ImageView>
+                  <RadioButton fx:id="Kuiz_btn_page_4_1" layoutX="488.0" layoutY="553.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="664.0" text="Ne duhet ta kalojm rrugen pa marrë parasyshë rrethanat" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="Kuiz_btn_page_4_2" layoutX="488.0" layoutY="602.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="806.0" text="Nëse nuk është e nevojshme më mirë është që to mos e kalojme rrugen" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </RadioButton>
+                  <Label fx:id="kuiz_timer111" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <BorderPane layoutX="86.0" layoutY="884.0" prefHeight="136.0" prefWidth="498.0" AnchorPane.bottomAnchor="0.0">
+               <left>
+                  <Label prefHeight="50.0" prefWidth="211.0" text="Koha e mbetur:" textFill="WHITE" BorderPane.alignment="TOP_LEFT">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </left>
+               <center>
+                  <Label fx:id="kuiz_timer" prefHeight="45.0" prefWidth="286.0" textFill="#d32929" BorderPane.alignment="TOP_CENTER">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </Label>
+               </center>
+            </BorderPane>
+            <BorderPane layoutX="171.0" prefHeight="151.0" prefWidth="1600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="-40.0">
+               <top>
+                  <StackPane prefHeight="150.0" prefWidth="870.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button id="Quiz_para" fx:id="Quiz_para" minWidth="229.0" mnemonicParsing="false" onMouseClicked="#front_btn_click" prefHeight="49.0" prefWidth="229.0" text="Para" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets left="250.0" />
+                           </StackPane.margin>
+                        </Button>
+                        <Button id="Quiz_mbrapa" fx:id="Quiz_mbrapa" contentDisplay="CENTER" minWidth="229.0" mnemonicParsing="false" onMouseClicked="#back_btn_click" prefHeight="49.0" prefWidth="229.0" text="Mbrapa" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets right="250.0" />
+                           </StackPane.margin>
+                        </Button>
+                        <Button fx:id="Perfundo_kuizz_btn" minWidth="229.0" mnemonicParsing="false" onAction="#Perfundo_kuizz_btn_click" prefHeight="49.0" prefWidth="229.0" text="Përfundo" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets left="250.0" />
+                           </StackPane.margin>
+                        </Button>
+                     </children>
+                  </StackPane>
+               </top>
+            </BorderPane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

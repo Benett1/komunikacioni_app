@@ -1,0 +1,34 @@
+#bodybg{
+ -fx-background-size: 103% 100%;
+}
+#loginButton{
+    -fx-background-color: #3797a4;
+}
+#loginButton:hover{
+    -fx-background-color: #8bcdcd;
+}
+#loginButton:pressed{
+    -fx-background-color: #16697a;
+}
+#username,#password{
+    -fx-text-fill: white;
+     -fx-border-color: grey;
+      -fx-border-width: 0 0 1 0;
+      -fx-background-color: transparent;
+}
+#username:focused,#password:focused{
+     -fx-border-color: #1f6f8b;
+      -fx-border-width: 0 0 1 0;
+}
+#2ndPane{
+    -fx-background-color: rgba(73, 84, 100, 0.95);
+    -fx-background-radius: 30px;
+}
+#img_1{
+    -fx-width:500px;
+    -fx-height:1000px;
+}
+#img_test{
+     -fx-background-repeat: stretch;
+     -fx-background-position: center center;
+ }

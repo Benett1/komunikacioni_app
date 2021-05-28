@@ -1,0 +1,52 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="komunikacioni_app:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="komunikacioni_app.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$USER_HOME$/Desktop/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="komunikacioni_app" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/fx/javafx-sdk-15.0.1/lib/src.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/fx/javafx-sdk-15.0.1/lib/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/fx/javafx-sdk-15.0.1/lib/javafx.web.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/fx/javafx-sdk-15.0.1/lib/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/fx/javafx-sdk-15.0.1/lib/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/fx/javafx-sdk-15.0.1/lib/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/fx/javafx-sdk-15.0.1/lib/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/fx/javafx-sdk-15.0.1/lib/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/fx/javafx-sdk-15.0.1/lib/javafx.graphics.jar" path-in-jar="/" />
+      <element id="library" level="project" name="lib" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/javafx-swt.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/javafx.base.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/javafx.controls.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/javafx.fxml.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/javafx.graphics.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/javafx.media.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/javafx.properties" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/javafx.swing.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/javafx.web.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libavplugin-54.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libavplugin-56.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libavplugin-57.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libavplugin-ffmpeg-56.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libavplugin-ffmpeg-57.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libavplugin-ffmpeg-58.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libdecora_sse.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libfxplugins.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libglass.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libglassgtk2.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libglassgtk3.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libgstreamer-lite.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libjavafx_font.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libjavafx_font_freetype.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libjavafx_font_pango.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libjavafx_iio.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libjfxmedia.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libjfxwebkit.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libprism_common.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libprism_es2.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/libprism_sw.so" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/javafx-sdk-15.0.1/lib/src.zip" />
+    </root>
+  </artifact>
+</component>

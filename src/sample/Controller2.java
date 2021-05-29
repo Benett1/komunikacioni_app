@@ -520,7 +520,7 @@ public class Controller2{
         }
         if (pyetja_4 != null) {
             String s = pyetja_4.getText();
-            if (s.equals("Nëse nuk është e nevojshme më mirë është që to mos e kalojme rrugen")){
+            if (s.equals("Nëse nuk është e nevojshme më mirë është që të mos e kalojmë rrugën")){
                 Kuiz_sakta++;
             }else{
                 Kuiz_pa_sakta++;

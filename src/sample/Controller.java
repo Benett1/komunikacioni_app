@@ -27,10 +27,9 @@ public class Controller implements Initializable{
     private TextField password;
     @FXML
     public Button loginButton;
+
     private static String Username="admin";
     private static String Password="admin";
-
-
 
     public void onSubmitClick() {
         if (!username.getText().equals("") && !password.getText().equals("")) {
@@ -43,7 +42,11 @@ public class Controller implements Initializable{
                     mainStage.setMinWidth(1600);
                     mainStage.setTitle("Siguria në komunikacion");
 
-                    Scene scene = new Scene(root, 1920, 1080);
+                    GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+                    int width = gd.getDisplayMode().getWidth();
+                    int height = gd.getDisplayMode().getHeight();
+
+                    Scene scene = new Scene(root, width, height);
                     scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("style_main_page.css")).toExternalForm());
                     mainStage.setScene(scene);
                     ((Label) root.lookup("#mylabel")).setText(username.getText());

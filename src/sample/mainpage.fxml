@@ -8,14 +8,18 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane style="-fx-background-color: #79a3b1;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+<AnchorPane prefWidth="1907.0" style="-fx-background-color: #79a3b1;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
    <children>
       <AnchorPane fx:id="chapter_one_pane" layoutX="367.0" layoutY="84.0" prefHeight="914.0" prefWidth="1491.0" visible="false" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="367.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="84.0">
          <children>
@@ -239,35 +243,6 @@
             <Font size="36.0" />
          </font>
       </Label>
-      <AnchorPane fx:id="After_kuiz" layoutX="227.0" layoutY="120.0" prefHeight="967.0" prefWidth="1703.0" style="-fx-background-color: #79a3b1;" visible="false">
-         <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="106.0" lineSpacing="15.0" prefHeight="302.0" prefWidth="1545.0" text="Kuizi përfundoi, rezultati:" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font size="22.0" />
-               </font>
-            </Label>
-            <Button fx:id="Perserit_btn" layoutX="729.0" layoutY="541.0" mnemonicParsing="false" onAction="#Vazhdo_click" prefHeight="56.0" prefWidth="224.0" text="Përsërit kuizin" textFill="WHITE">
-               <font>
-                  <Font size="21.0" />
-               </font>
-            </Button>
-            <Label fx:id="pergjigje_gabim" layoutX="656.0" layoutY="346.0" prefHeight="86.0" prefWidth="521.0" text="Numri i përgjigjeve të pa sakta: 4" textFill="WHITE">
-               <font>
-                  <Font size="22.0" />
-               </font>
-            </Label>
-            <Label fx:id="pergjigje_sakt" layoutX="656.0" layoutY="286.0" prefHeight="86.0" prefWidth="521.0" text="Numri i përgjigjeve të sakta: 0" textFill="WHITE">
-               <font>
-                  <Font size="22.0" />
-               </font>
-            </Label>
-            <Label fx:id="rezultati" layoutX="762.0" layoutY="450.0" text="Rezultati: 0 / 4" textFill="WHITE">
-               <font>
-                  <Font size="22.0" />
-               </font>
-            </Label>
-         </children>
-      </AnchorPane>
       <BorderPane layoutY="900.0" prefHeight="162.0" prefWidth="1930.0" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <right>
             <Label fx:id="page_label" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="37.0" prefWidth="187.0" text="Faqe" textFill="WHITE" visible="false" BorderPane.alignment="CENTER">
@@ -304,9 +279,72 @@
             </HBox>
          </center>
       </BorderPane>
+      <AnchorPane fx:id="After_kuiz" layoutX="227.0" layoutY="120.0" prefHeight="967.0" prefWidth="1703.0" style="-fx-background-color: #79a3b1;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="227.0" AnchorPane.rightAnchor="186.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <BorderPane layoutX="391.0" layoutY="166.0" prefHeight="413.0" prefWidth="1110.0" AnchorPane.leftAnchor="391.0" AnchorPane.rightAnchor="258.0">
+               <center>
+                  <GridPane prefHeight="929.0" prefWidth="798.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="459.0" minHeight="10.0" prefHeight="131.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="570.0" minHeight="0.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="570.0" minHeight="0.0" prefHeight="93.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="570.0" minHeight="0.0" prefHeight="101.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="570.0" minHeight="10.0" prefHeight="145.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="15.0" prefHeight="116.0" prefWidth="1155.0" text="Kuizi përfundoi, rezultati:" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <StackPane GridPane.rowIndex="4">
+                           <children>
+                              <Button fx:id="Perserit_btn" mnemonicParsing="false" onAction="#Vazhdo_click" prefHeight="56.0" prefWidth="224.0" text="Përsërit kuizin" textFill="WHITE">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                        <StackPane GridPane.rowIndex="1">
+                           <children>
+                              <Label fx:id="pergjigje_gabim" prefHeight="86.0" prefWidth="383.0" text="Numri i përgjigjeve të pa sakta: 4" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <StackPane GridPane.rowIndex="3">
+                           <children>
+                              <Label fx:id="rezultati" text="Rezultati: 0 / 4" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <StackPane GridPane.rowIndex="2">
+                           <children>
+                              <Label fx:id="pergjigje_sakt" prefHeight="86.0" prefWidth="353.0" text="Numri i përgjigjeve të sakta: 0" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </GridPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
       <AnchorPane fx:id="Before_kuiz" layoutX="227.0" layoutY="120.0" prefHeight="900.0" prefWidth="1703.0" visible="false" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="227.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="120.0">
          <children>
-            <BorderPane layoutX="76.0" layoutY="312.0" prefHeight="390.0" prefWidth="1649.0" AnchorPane.bottomAnchor="198.0" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="-22.0" AnchorPane.topAnchor="312.0">
+            <BorderPane layoutX="74.0" layoutY="270.0" prefHeight="390.0" prefWidth="1649.0" AnchorPane.bottomAnchor="240.0" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="-20.0" AnchorPane.topAnchor="270.0">
                <center>
                   <Text fill="WHITE" lineSpacing="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kuizi do të zgjasë 5 minuta, gjate mbajtjes se kuizit nëse vendosni të dilni nga ky panel përgjigjet e dhëna nuk do te jenë të vlefshme. A jeni të sigurt që dëshironi të vazhdoni me kuizin?" textAlignment="CENTER" wrappingWidth="1169.6327209472656" BorderPane.alignment="CENTER">
                      <font>
@@ -327,124 +365,310 @@
             </BorderPane>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="quizz_panel" layoutX="219.0" layoutY="110.0" prefHeight="968.0" prefWidth="1731.0" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="133.0" AnchorPane.topAnchor="110.0">
+      <AnchorPane fx:id="quizz_panel" layoutX="219.0" layoutY="110.0" prefHeight="968.0" prefWidth="1731.0" visible="false" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="133.0" AnchorPane.topAnchor="110.0">
          <children>
-            <AnchorPane fx:id="Kuiz_page_1" prefHeight="964.0" prefWidth="1700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane fx:id="Kuiz_page_1" prefHeight="964.0" prefWidth="1700.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="469.0" layoutY="478.0" prefHeight="152.0" prefWidth="811.0" text="Cila nga fotografitë më sipër është e saktë " textFill="WHITE">
-                     <font>
-                        <Font size="21.0" />
-                     </font>
-                  </Label>
-                  <RadioButton fx:id="Kuiz_btn_page_1_1" layoutX="778.0" layoutY="613.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="210.0" text="Fotoja numër 1" textFill="WHITE">
-                     <font>
-                        <Font size="21.0" />
-                     </font>
-                  </RadioButton>
-                  <RadioButton fx:id="Kuiz_btn_page_1_2" layoutX="778.0" layoutY="662.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="202.0" text="Fotoja numër 2" textFill="WHITE">
-                     <font>
-                        <Font size="21.0" />
-                     </font>
-                  </RadioButton>
-                  <Region id="Region_4_2" layoutX="140.0" layoutY="110.0" prefHeight="399.0" prefWidth="660.0" AnchorPane.bottomAnchor="459.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="931.0" AnchorPane.topAnchor="110.0" />
-                  <Region id="Region_4_1" layoutX="918.0" layoutY="110.0" prefHeight="399.0" prefWidth="712.0" visible="false" AnchorPane.bottomAnchor="459.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="931.0" AnchorPane.topAnchor="110.0" />
+                  <BorderPane layoutX="382.0" layoutY="434.0" prefHeight="368.0" prefWidth="1081.0" AnchorPane.bottomAnchor="166.0" AnchorPane.leftAnchor="382.0" AnchorPane.rightAnchor="246.0" AnchorPane.topAnchor="434.0">
+                     <center>
+                        <GridPane prefHeight="300.0" prefWidth="1081.0" BorderPane.alignment="CENTER">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="214.0" minHeight="10.0" prefHeight="127.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="208.0" minHeight="10.0" prefHeight="118.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="182.0" minHeight="10.0" prefHeight="123.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <StackPane prefHeight="193.0" prefWidth="1081.0">
+                                 <children>
+                                    <Label contentDisplay="CENTER" prefHeight="114.0" prefWidth="473.0" text="Cila nga fotografitë më sipër është e saktë " textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </StackPane>
+                              <StackPane alignment="TOP_CENTER" GridPane.rowIndex="2">
+                                 <children>
+                                    <RadioButton fx:id="Kuiz_btn_page_1_2" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="76.0" prefWidth="224.0" text="Fotoja numër 2" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </RadioButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="51.0" prefWidth="1081.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <RadioButton fx:id="Kuiz_btn_page_1_1" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="61.0" prefWidth="225.0" text="Fotoja numër 1" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </RadioButton>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </GridPane>
+                     </center>
+                  </BorderPane>
+                  <BorderPane layoutY="114.0" prefHeight="290.0" prefWidth="1822.0" AnchorPane.bottomAnchor="564.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-113.0" AnchorPane.topAnchor="114.0">
+                     <center>
+                        <StackPane prefHeight="290.0" prefWidth="1860.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <StackPane StackPane.alignment="CENTER">
+                                 <StackPane.margin>
+                                    <Insets right="550.0" />
+                                 </StackPane.margin>
+                                 <children>
+                                    <ImageView fitHeight="249.0" fitWidth="505.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@img/5.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="36.0" style="-fx-background-color: #235b6b#235b6b;" text="1" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font size="27.0" />
+                                       </font>
+                                       <StackPane.margin>
+                                          <Insets left="430.0" top="180.0" />
+                                       </StackPane.margin>
+                                    </Label>
+                                 </children>
+                              </StackPane>
+                              <StackPane>
+                                 <StackPane.margin>
+                                    <Insets left="600.0" />
+                                 </StackPane.margin>
+                                 <children>
+                                    <ImageView fitHeight="249.0" fitWidth="505.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@img/5+6.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="36.0" style="-fx-background-color: #235b6b#235b6b;" text="2" textFill="WHITE">
+                                       <font>
+                                          <Font size="27.0" />
+                                       </font>
+                                       <StackPane.margin>
+                                          <Insets left="430.0" top="180.0" />
+                                       </StackPane.margin>
+                                    </Label>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </StackPane>
+                     </center>
+                  </BorderPane>
                </children>
             </AnchorPane>
-            <AnchorPane fx:id="Kuiz_page_2" prefHeight="964.0" prefWidth="1700.0" visible="false">
+            <AnchorPane fx:id="Kuiz_page_2" prefHeight="964.0" prefWidth="1700.0" visible="false" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="875.0" layoutY="223.0" prefHeight="194.0" prefWidth="811.0" text="Cilën nga hapat në figuren ne të majtë duhet ti përmbushum&#10;para se te tejkalojmë rrugen? " textFill="WHITE">
-                     <font>
-                        <Font size="21.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="337.0" fitWidth="656.0" layoutX="205.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@img/10.png" />
-                     </image>
-                  </ImageView>
-                  <RadioButton fx:id="Kuiz_btn_page_2_1" layoutX="828.0" layoutY="553.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="210.0" text="2,3" textFill="WHITE">
-                     <font>
-                        <Font size="21.0" />
-                     </font>
-                  </RadioButton>
-                  <RadioButton fx:id="Kuiz_btn_page_2_2" layoutX="828.0" layoutY="602.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="202.0" text="Të gjithë hapat" textFill="WHITE">
-                     <font>
-                        <Font size="21.0" />
-                     </font>
-                  </RadioButton>
-                  <Label fx:id="kuiz_timer1" textFill="WHITE">
+                  <BorderPane layoutX="340.0" layoutY="424.0" prefHeight="368.0" prefWidth="1204.0" AnchorPane.bottomAnchor="172.0" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="156.0" AnchorPane.topAnchor="424.0">
+                     <center>
+                        <GridPane prefHeight="315.0" prefWidth="1204.0" BorderPane.alignment="CENTER">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="208.0" minHeight="10.0" prefHeight="130.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="208.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="130.0" minHeight="10.0" prefHeight="109.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <StackPane alignment="BOTTOM_CENTER">
+                                 <children>
+                                    <RadioButton fx:id="Kuiz_btn_page_2_1" mnemonicParsing="false" prefHeight="52.0" prefWidth="202.0" text="2,3" textFill="WHITE">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </RadioButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane GridPane.rowIndex="1">
+                                 <children>
+                                    <RadioButton fx:id="Kuiz_btn_page_2_2" mnemonicParsing="false" prefHeight="76.0" prefWidth="202.0" text="Të gjithë hapat" textFill="WHITE">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </RadioButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane alignment="TOP_CENTER" GridPane.rowIndex="2">
+                                 <children>
+                                    <RadioButton fx:id="Kuiz_btn_page_2_3" mnemonicParsing="false" prefHeight="49.0" prefWidth="202.0" text="1,2,3" textFill="WHITE">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </RadioButton>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </GridPane>
+                     </center>
+                  </BorderPane>
+                  <BorderPane layoutX="26.0" layoutY="128.0" prefHeight="276.0" prefWidth="1810.0" AnchorPane.bottomAnchor="560.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="-136.0" AnchorPane.topAnchor="128.0">
+                     <center>
+                        <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="267.0" fitWidth="506.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/10.png" />
+                                 </image>
+                                 <FlowPane.margin>
+                                    <Insets left="30.0" />
+                                 </FlowPane.margin>
+                              </ImageView>
+                              <Label prefHeight="194.0" prefWidth="681.0" text="Cilën nga hapat në figuren ne të majtë duhet ti përmbushum&#10;para se te tejkalojmë rrugen? " textFill="WHITE">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                                 <FlowPane.margin>
+                                    <Insets left="50.0" />
+                                 </FlowPane.margin>
+                              </Label>
+                           </children>
+                        </FlowPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Kuiz_page_3" prefHeight="966.0" prefWidth="1700.0" visible="false" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <BorderPane layoutX="26.0" layoutY="128.0" prefHeight="276.0" prefWidth="1810.0" AnchorPane.bottomAnchor="560.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="-136.0" AnchorPane.topAnchor="128.0">
+                     <center>
+                        <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="267.0" fitWidth="506.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/15-kuiz.jpg" />
+                                 </image>
+                                 <FlowPane.margin>
+                                    <Insets left="30.0" />
+                                 </FlowPane.margin>
+                              </ImageView>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="194.0" prefWidth="753.0" text="Gjatë kalimit të rruges, cilë prej 3 drejtimeve duhet tju permbahemi?" textFill="WHITE">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                                 <FlowPane.margin>
+                                    <Insets left="30.0" />
+                                 </FlowPane.margin>
+                              </Label>
+                           </children>
+                        </FlowPane>
+                     </center>
+                  </BorderPane>
+                  <BorderPane layoutX="354.0" layoutY="423.0" prefHeight="368.0" prefWidth="1287.0" AnchorPane.bottomAnchor="175.0" AnchorPane.leftAnchor="354.0" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="423.0">
+                     <center>
+                        <GridPane prefHeight="315.0" prefWidth="1204.0" BorderPane.alignment="CENTER">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="208.0" minHeight="10.0" prefHeight="130.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="208.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="130.0" minHeight="10.0" prefHeight="109.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <StackPane alignment="BOTTOM_CENTER">
+                                 <children>
+                                    <RadioButton fx:id="Kuiz_btn_page_3_1" mnemonicParsing="false" prefHeight="61.0" prefWidth="94.0" text="A" textFill="WHITE">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </RadioButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane GridPane.rowIndex="1">
+                                 <children>
+                                    <RadioButton fx:id="Kuiz_btn_page_3_3" mnemonicParsing="false" prefHeight="76.0" prefWidth="94.0" text="B" textFill="WHITE">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </RadioButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane alignment="TOP_CENTER" GridPane.rowIndex="2">
+                                 <children>
+                                    <RadioButton fx:id="Kuiz_btn_page_3_2" mnemonicParsing="false" prefHeight="54.0" prefWidth="94.0" text="C" textFill="WHITE">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </RadioButton>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </GridPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Kuiz_page_4" layoutX="10.0" prefHeight="968.0" prefWidth="1690.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="kuiz_timer111" textFill="WHITE" AnchorPane.bottomAnchor="938.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1810.0" AnchorPane.topAnchor="0.0">
                      <font>
                         <Font size="25.0" />
                      </font>
                   </Label>
-                  <RadioButton fx:id="Kuiz_btn_page_2_3" layoutX="828.0" layoutY="652.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="202.0" text="1,2,3" textFill="WHITE">
-                     <font>
-                        <Font size="21.0" />
-                     </font>
-                  </RadioButton>
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="Kuiz_page_3" prefHeight="966.0" prefWidth="1700.0" visible="false">
-               <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="875.0" layoutY="223.0" prefHeight="194.0" prefWidth="811.0" text="Gjatë kalimit të rruges, cilë prej 3 drejtimeve duhet tju permbahemi?" textFill="WHITE">
-                     <font>
-                        <Font size="21.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="337.0" fitWidth="656.0" layoutX="205.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@img/15-kuiz.jpg" />
-                     </image>
-                  </ImageView>
-                  <RadioButton fx:id="Kuiz_btn_page_3_1" layoutX="858.0" layoutY="553.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="210.0" text="A" textFill="WHITE">
-                     <font>
-                        <Font size="21.0" />
-                     </font>
-                  </RadioButton>
-                  <RadioButton fx:id="Kuiz_btn_page_3_2" layoutX="858.0" layoutY="602.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="202.0" text="C" textFill="WHITE">
-                     <font>
-                        <Font size="21.0" />
-                     </font>
-                  </RadioButton>
-                  <Label fx:id="kuiz_timer11" textFill="WHITE">
-                     <font>
-                        <Font size="25.0" />
-                     </font>
-                  </Label>
-                  <RadioButton fx:id="Kuiz_btn_page_3_3" layoutX="858.0" layoutY="655.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="202.0" text="B" textFill="WHITE">
-                     <font>
-                        <Font size="21.0" />
-                     </font>
-                  </RadioButton>
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="Kuiz_page_4" layoutX="10.0" prefHeight="968.0" prefWidth="1690.0" visible="false">
-               <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="875.0" layoutY="223.0" prefHeight="194.0" prefWidth="824.0" text="Gjatë natës ose kushteve me shikim te zvogëluar, nese nevoja a&#10;duhet ta kalojmë rrugen?" textFill="WHITE">
-                     <font>
-                        <Font size="21.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="337.0" fitWidth="656.0" layoutX="205.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@img/16.png" />
-                     </image>
-                  </ImageView>
-                  <RadioButton fx:id="Kuiz_btn_page_4_1" layoutX="488.0" layoutY="553.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="664.0" text="Ne duhet ta kalojm rrugen pa marrë parasyshë rrethanat" textFill="WHITE">
-                     <font>
-                        <Font size="21.0" />
-                     </font>
-                  </RadioButton>
-                  <RadioButton fx:id="Kuiz_btn_page_4_2" layoutX="488.0" layoutY="602.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="806.0" text="Nëse nuk është e nevojshme më mirë është që to mos e kalojme rrugen" textFill="WHITE">
-                     <font>
-                        <Font size="21.0" />
-                     </font>
-                  </RadioButton>
-                  <Label fx:id="kuiz_timer111" textFill="WHITE">
-                     <font>
-                        <Font size="25.0" />
-                     </font>
-                  </Label>
+                  <BorderPane layoutX="66.0" layoutY="114.0" prefHeight="276.0" prefWidth="1878.0" AnchorPane.bottomAnchor="578.0" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="-134.0" AnchorPane.topAnchor="114.0">
+                     <center>
+                        <FlowPane alignment="CENTER" prefHeight="276.0" prefWidth="1786.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="267.0" fitWidth="506.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/16.png" />
+                                 </image>
+                                 <FlowPane.margin>
+                                    <Insets />
+                                 </FlowPane.margin>
+                              </ImageView>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="194.0" prefWidth="694.0" text="Gjatë natës ose kushteve me shikim te zvogëluar, nese nevoja a&#10;duhet ta kalojmë rrugen?" textFill="WHITE">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                                 <FlowPane.margin>
+                                    <Insets left="20.0" />
+                                 </FlowPane.margin>
+                              </Label>
+                           </children>
+                        </FlowPane>
+                     </center>
+                  </BorderPane>
+                  <BorderPane layoutX="266.0" layoutY="145.0" prefHeight="636.0" prefWidth="1464.0" AnchorPane.bottomAnchor="187.0" AnchorPane.leftAnchor="248.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="413.0">
+                     <center>
+                        <GridPane prefHeight="315.0" prefWidth="1204.0" BorderPane.alignment="CENTER">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="208.0" minHeight="10.0" prefHeight="130.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="208.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="130.0" minHeight="10.0" prefHeight="109.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <StackPane alignment="BOTTOM_CENTER">
+                                 <children>
+                                    <RadioButton fx:id="Kuiz_btn_page_4_1" mnemonicParsing="false" prefHeight="61.0" prefWidth="806.0" text="Ne duhet ta kalojm rrugen pa marrë parasyshë rrethanat" textFill="WHITE">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </RadioButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane GridPane.rowIndex="1">
+                                 <children>
+                                    <RadioButton fx:id="Kuiz_btn_page_4_2" mnemonicParsing="false" prefHeight="76.0" prefWidth="806.0" text="Nëse nuk është e nevojshme më mirë është që to mos e kalojme rrugen" textFill="WHITE">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </RadioButton>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </GridPane>
+                     </center>
+                  </BorderPane>
                </children>
             </AnchorPane>
             <BorderPane layoutX="86.0" layoutY="884.0" prefHeight="136.0" prefWidth="498.0" AnchorPane.bottomAnchor="0.0">
@@ -466,7 +690,7 @@
                   </Label>
                </center>
             </BorderPane>
-            <BorderPane layoutX="171.0" prefHeight="151.0" prefWidth="1600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="-40.0">
+            <BorderPane layoutX="91.0" prefHeight="151.0" prefWidth="1658.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="91.0" AnchorPane.rightAnchor="-40.0">
                <top>
                   <StackPane prefHeight="150.0" prefWidth="870.0" BorderPane.alignment="CENTER">
                      <children>

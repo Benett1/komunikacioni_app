@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="komunikacioni_app:jar">
+  <artifact type="jar" name="Siguria_ne_komunakcion.jar">
     <output-path>$USER_HOME$/Desktop</output-path>
     <root id="archive" name="komunikacioni_app.jar">
       <element id="directory" name="META-INF">
